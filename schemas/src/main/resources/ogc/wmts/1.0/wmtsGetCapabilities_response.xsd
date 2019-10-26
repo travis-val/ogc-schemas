@@ -82,6 +82,11 @@
 		<complexContent>
 			<extension base="ows:ContentsBaseType">
 				<sequence>
+					<element ref="wmts:Layer" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>A description of available layers</documentation>
+						</annotation>
+					</element>
 					<element ref="wmts:TileMatrixSet" minOccurs="0" maxOccurs="unbounded">
 						<annotation>
 							<documentation>A description of the geometry of a tile fragmentation</documentation>
